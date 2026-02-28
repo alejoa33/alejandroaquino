@@ -1094,12 +1094,12 @@
     </div>
     </div>
   </div>
-  <form class="contact-form" onsubmit="handleForm(event)">
-    <input type="text" placeholder="Nombre completo *" required>
-    <input type="tel" placeholder="Teléfono / WhatsApp *" required>
-    <input type="email" placeholder="Correo electrónico">
-    <input type="text" placeholder="Área de consulta (Laboral, Familia, Civil…)">
-    <textarea rows="4" placeholder="Describa brevemente su situación…"></textarea>
+  <form class="contact-form" action="https://formspree.io/f/mwvnjplp" method="POST">
+    <input type="text" name="nombre" placeholder="Nombre completo *" required>
+    <input type="tel" name="telefono" placeholder="Teléfono / WhatsApp *" required>
+    <input type="email" name="email" placeholder="Correo electrónico">
+    <input type="text" name="area" placeholder="Área de consulta (Laboral, Familia, Civil…)">
+    <textarea rows="4" name="mensaje" placeholder="Describa brevemente su situación…"></textarea>
     <button type="submit" class="btn-primary" style="width:100%; text-align:center;">Enviar consulta →</button>
     <p style="color:rgba(247,243,238,0.3);font-size:0.75rem;text-align:center;">Sus datos son confidenciales y no serán compartidos con terceros.</p>
   </form>
